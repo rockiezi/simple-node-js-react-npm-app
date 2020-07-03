@@ -6,7 +6,7 @@ pipeline {
         }
     }
     environment { 
-        HOME="." 
+        HOME='/home/node'
     }
     stages {
         stage('Build') { 
