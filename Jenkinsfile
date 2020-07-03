@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo no npm install any more'
+                sh 'npm install'
             }
         }
     }
