@@ -6,12 +6,12 @@ pipeline {
         }
     }
     environment { 
-        HOME='/home/node'
+        HOME='/tmp'
     }
     stages {
         stage('Build') { 
             steps {
-                sh 'npm config set unsafe-perm true'
+                sh 'npm config set cache /tmp'
                 sh 'npm install' 
             }
         }
